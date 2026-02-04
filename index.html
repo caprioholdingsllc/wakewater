@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangle Water Restoration | How We Handle Water Damage Emergency</title>
+    <meta name="description" content="Water damage restoration in Wake County. 24/7 emergency response for floods, leaks, and water damage across the Triangle.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        .header {
+            background: linear-gradient(135deg, #0369a1 0%, #075985 100%);
+            color: white;
+            padding: 1rem 2rem;
+        }
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        .phone {
+            font-size: 1.3rem;
+            font-weight: 600;
+            background: #dc2626;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+        }
+        .hero {
+            background: #075985;
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            opacity: 0.95;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        .process-intro {
+            max-width: 900px;
+            margin: 0 auto 3rem auto;
+            text-align: center;
+        }
+        .process-intro h2 {
+            color: #0369a1;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        .process-intro p {
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.8;
+        }
+        .process-section {
+            background: #e0f2fe;
+            padding: 3rem 2rem;
+            margin: 0 -2rem 3rem -2rem;
+        }
+        .process-section h2 {
+            text-align: center;
+            color: #0369a1;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .process-step {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            position: relative;
+            border-top: 4px solid #075985;
+        }
+        .process-step .step-number {
+            position: absolute;
+            top: -20px;
+            left: 20px;
+            background: #0369a1;
+            color: white;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+        .process-step h3 {
+            color: #0369a1;
+            margin-top: 1rem;
+            margin-bottom: 0.75rem;
+            font-size: 1.3rem;
+        }
+        .process-step .timeline {
+            background: #fef3c7;
+            color: #92400e;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+        .process-step p {
+            color: #666;
+            line-height: 1.7;
+        }
+        .services-section {
+            margin: 3rem 0;
+        }
+        .services-section h2 {
+            color: #0369a1;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+        .service-card {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 3px solid #075985;
+        }
+        .service-card h3 {
+            color: #0369a1;
+            margin-bottom: 0.75rem;
+        }
+        .service-card p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+        .emergency-section {
+            background: #fee2e2;
+            border-left: 4px solid #dc2626;
+            padding: 2rem;
+            border-radius: 4px;
+            margin: 3rem 0;
+        }
+        .emergency-section h3 {
+            color: #991b1b;
+            margin-bottom: 1rem;
+        }
+        .emergency-section p {
+            color: #b91c1c;
+            line-height: 1.7;
+            margin-bottom: 1rem;
+        }
+        .form-section {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            max-width: 700px;
+            margin: 3rem auto;
+        }
+        .form-section h2 {
+            color: #0369a1;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+            text-align: center;
+        }
+        .form-section .subtitle {
+            color: #666;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 1.25rem;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-family: inherit;
+        }
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: #075985;
+        }
+        textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+        .submit-btn {
+            background: linear-gradient(135deg, #0369a1 0%, #075985 100%);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+        }
+        .submit-btn:hover {
+            opacity: 0.95;
+        }
+        .footer {
+            background: #2c3e50;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">Triangle Water Restoration</div>
+            <div class="phone">🚨 (919) 635-9141</div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>How We Handle Water Damage Emergencies</h1>
+        <p>Fast response and systematic restoration process for water damage across Wake County.</p>
+    </section>
+
+    <div class="container">
+        <div class="process-intro">
+            <h2>Our Water Damage Response Process</h2>
+            <p>Water damage requires immediate action. Every hour counts to prevent mold growth and structural damage. We follow a proven process from emergency call to complete restoration.</p>
+        </div>
+
+        <section class="process-section">
+            <h2>From Emergency Call to Full Restoration</h2>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h3>Emergency Response</h3>
+                    <div class="timeline">⏱️ Within 1-2 Hours</div>
+                    <p>Call us 24/7. We dispatch a team immediately. Assess damage, stop water source, and begin emergency water extraction right away.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h3>Water Extraction</h3>
+                    <div class="timeline">⏱️ Day 1</div>
+                    <p>Remove all standing water using industrial pumps and extractors. The faster water is removed, the less damage occurs.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h3>Drying & Dehumidification</h3>
+                    <div class="timeline">⏱️ 3-5 Days</div>
+                    <p>Set up commercial dehumidifiers and air movers. Monitor moisture levels daily. Dry walls, floors, and structure completely to prevent mold.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h3>Cleaning & Sanitizing</h3>
+                    <div class="timeline">⏱️ After Drying</div>
+                    <p>Clean and disinfect all affected areas. Apply antimicrobial treatments. Address any mold growth discovered during drying.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">5</div>
+                    <h3>Restoration Work</h3>
+                    <div class="timeline">⏱️ 1-2 Weeks</div>
+                    <p>Replace damaged drywall, flooring, and materials. Paint and finish work. Return your property to pre-damage condition.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">6</div>
+                    <h3>Insurance Coordination</h3>
+                    <div class="timeline">⏱️ Throughout Process</div>
+                    <p>Document everything for insurance. Provide detailed reports and photos. Work directly with your insurance adjuster.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="services-section">
+            <h2>Water Damage Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Emergency Water Extraction</h3>
+                    <p>24/7 response. Remove standing water immediately.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Flood Damage</h3>
+                    <p>Flooding cleanup and structural drying.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Burst Pipe Cleanup</h3>
+                    <p>Clean up water from burst or frozen pipes.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Sewage Backup</h3>
+                    <p>Hazardous sewage cleanup and sanitization.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Mold Remediation</h3>
+                    <p>Remove mold growth from water damage.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Structural Drying</h3>
+                    <p>Dry walls, floors, and building materials thoroughly.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="emergency-section">
+            <h3>🚨 Water Damage Is an Emergency</h3>
+            <p><strong>Every minute counts.</strong> Water spreads quickly through walls, floors, and ceilings. Mold can begin growing in 24-48 hours. Structural damage worsens with time.</p>
+            <p><strong>Call us immediately</strong> if you discover water damage. We're available 24/7 because water damage doesn't wait for business hours. The faster we respond, the less damage and lower restoration costs.</p>
+        </div>
+
+        <section class="form-section">
+            <h2>Request Emergency Service</h2>
+            <p class="subtitle">Available 24/7 for water damage emergencies</p>
+            
+            <form id="leadForm" action="https://hook.us2.make.com/gzcbxb8x2e5xph37kjhm48ur4khvh7ir" method="POST">
+                <input type="hidden" name="site_id" value="WAKE-WATER-001">
+                <input type="hidden" name="market" value="Wake County">
+                <input type="hidden" name="industry" value="Water Damage/Restoration">
+                <input type="hidden" name="lead_type" value="Service Request">
+                <input type="hidden" name="source_url" value="trianglewaterrestoration.com">
+                
+                <div class="form-group">
+                    <label for="name">Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone *</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Property Address *</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="damage_type">Type of Damage *</label>
+                    <select id="damage_type" name="damage_type" required>
+                        <option value="">Select...</option>
+                        <option value="Flood">Flood</option>
+                        <option value="Burst Pipe">Burst Pipe</option>
+                        <option value="Sewage Backup">Sewage Backup</option>
+                        <option value="Leak">Leak</option>
+                        <option value="Storm Damage">Storm Damage</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="details">Damage Description *</label>
+                    <textarea id="details" name="details" required placeholder="Describe the water damage situation..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Request Emergency Service</button>
+            </form>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Triangle Water Restoration. 24/7 Emergency Water Damage Services.</p>
+    </footer>
+
+    <script>
+        document.getElementById('leadForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            
+            fetch(this.action, {
+                method: 'POST',
+                body: formData,
+                mode: 'no-cors'
+            }).then(() => {
+                window.location.href = 'thanks.html';
+            }).catch(() => {
+                window.location.href = 'thanks.html';
+            });
+        });
+    </script>
+</body>
+</html>
